@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  article-service:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+       - 8080:8080
+      environment:
+        AVERAGE_SPEED_HUMAN: 3
+        
